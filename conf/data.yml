@@ -1,0 +1,215 @@
+User(homer):
+    firstName: Homer
+    lastName: Simpson
+    age: 55
+    nationality: Irish
+    statusText: offline
+    email: homer@simpson.com
+    password: secret
+
+User(marge):
+    firstName: Marge
+    lastName: Simpson
+    statusText: offline
+    age: 45
+    nationality: Irish
+    email: marge@simpson.com
+    password: secret
+    
+User(lisa):
+    firstName: Lisa
+    lastName: Simpson
+    age: 15
+    nationality: Irish
+    statusText: offline
+    email: lisa@simpson.com
+    password: secret   
+    
+User(bart):
+    firstName: Bart
+    lastName: Simpson
+    age: 25
+    nationality: English
+    statusText: offline
+    email: bart@simpson.com
+    password: secret 
+    
+User(maggie):
+    firstName: Maggie
+    lastName: Simpson
+    age: 23
+    nationality: Irish
+    statusText: offline
+    email: maggie@simpson.com
+    password: secret  
+   
+Friendship(homer-marge): 
+    sourceUser : homer
+    targetUser : marge
+    
+Friendship(marge-homer): 
+    sourceUser : marge
+    targetUser : homer
+ 
+Friendship(marge-lisa): 
+    sourceUser : marge
+    targetUser : lisa
+    
+Friendship(homer-lisa): 
+    sourceUser : homer
+    targetUser : lisa 
+       
+Friendship(homer-bart): 
+    sourceUser : homer
+    targetUser : bart    
+
+Friendship(lisa-homer): 
+    sourceUser : lisa
+    targetUser : homer   
+
+Friendship(lisa-marge): 
+    sourceUser : lisa
+    targetUser : marge   
+
+Friendship(bart-homer): 
+    sourceUser : bart
+    targetUser : homer    
+    
+    
+User(homer):
+    firstName: Homer
+    lastName: Simpson
+    age: 55
+    nationality: Irish
+    statusText: offline
+    email: homer@simpson.com
+    password: secret    
+    friendships:
+              - homer-marge
+              - homer-lisa 
+              - homer-bart   
+              
+User(marge):
+    firstName: Marge
+    lastName: Simpson
+    statusText: offline
+    age: 45
+    nationality: Irish
+    email: marge@simpson.com
+    password: secret
+    friendships:
+              - marge-homer
+              - marge-lisa
+
+User(lisa):
+    firstName: Lisa
+    lastName: Simpson
+    age: 15
+    nationality: Irish
+    statusText: offline
+    email: lisa@simpson.com
+    password: secret
+    friendships:
+              - lisa-homer
+              - lisa-marge 
+                          
+User(bart):
+    firstName: Bart
+    lastName: Simpson
+    age: 25
+    nationality: English
+    statusText: offline
+    email: bart@simpson.com
+    password: secret 
+    friendships:
+              - bart-homer
+              
+                  
+Message(message1):
+    from : marge
+    to   : homer
+    messageText: 'Where are You off to?'
+    postedAt: 2014-06-18 19:05:00.0
+   
+
+Message(message2):
+    from : homer
+    to   : marge
+    messageText: 'I am off to the pub?'
+    postedAt: 2014-06-18 19:15:00.0
+     
+    
+Message(message3):
+    from : lisa
+    to   : homer
+    messageText: 'Why are you not at work?'
+    postedAt: 2014-06-18 19:25:00.0
+    
+
+Message(message4):
+    from : marge
+    to   : homer
+    messageText: 'Why are you going to the pub?'
+    postedAt: 2014-06-18 19:35:00.0
+    
+
+Message(message5):
+    from : marge
+    to   : homer
+    messageText: 'Dont be late!'
+    postedAt: 2014-06-18 19:48:00.0
+  
+
+Message(message6):
+    from : homer
+    to   : marge
+    messageText: 'Doh!'
+    postedAt: 2014-06-18 19:45:00.0
+  
+    
+Message(message8):
+    from : lisa
+    to   : homer
+    messageText: 'Explain Yourself?'
+    postedAt: 2014-06-18 19:50:00.0
+    
+    
+Message(message9):
+    from : homer
+    to   : lisa
+    messageText: 'I am working from home.'
+    postedAt: 2014-06-18 20:00:00.0
+
+    
+Message(message10):
+    from : marge
+    to   : lisa
+    messageText: 'when are you coming back?'
+    postedAt: 2014-06-18 20:15:00.0
+      
+
+Message(message11):
+    from : lisa
+    to   : marge
+    messageText: 'As soon as I finish my work'
+    postedAt: 2014-06-18 20:25:00.0
+    
+    
+    
+    
+
+    
+    
+                  
+              
+                   
+    
+             
+    
+    
+      
+       
+     
+    
+    
+                

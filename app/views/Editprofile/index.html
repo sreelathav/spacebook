@@ -1,0 +1,26 @@
+#{extends 'main.html' /}
+#{set title:'Edit Profile' /}
+
+<nav class="ui inverted orange menu">   
+  <a class="ui active item" href="/profile">Back to Profile</a> 
+</nav>
+
+<h2 class="ui small header"> Age</h2>
+ <div class="ui green block label">
+     <p> ${user.age} </p>
+ </div>
+ <form action="/editprofile/changeage" method="post">
+     <h3 class="ui inverted teal block header">Enter Age</h3>
+     <textarea class="ui field" name="profileage"> </textarea>
+     <input class="ui purple button" type="submit" name="submit" value="Change" />
+ </form>
+ 
+ <h2 class="ui small header"> Nationality</h2>
+ <div class="ui green block label">
+     <p> ${user.nationality} </p>
+ </div>
+ <form action="/editprofile/changenationality" method="post">
+     <h3 class="ui inverted teal block header">Enter Nationality</h3>
+     <textarea class="ui field" name="profilenationality"> </textarea>
+     <input class="ui purple button" type="submit" name="submit" value="Change" />
+ </form>

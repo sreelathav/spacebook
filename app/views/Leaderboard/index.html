@@ -1,0 +1,38 @@
+#{extends 'main.html' /}
+#{set title:'Leaderboard' /}
+
+<nav class="ui green inverted menu"> 
+  <a class="ui item" href="/home">Home</a>      
+  <a class="ui item" href="/members">Members</a>   
+  <a class="ui item" href="/profile">Profile</a> 
+  <a class="ui active item" href="/leaderboard">Leaderboard</a>  
+  <a class="ui item" href="/logout">Logout</a>     
+</nav>
+
+<section class="ui segment">
+  <h1> Social LeaderBoard</h1> 
+  <table class = "ui inverted orange table segment">
+   <thead>
+    <tr>
+    <th>Member</th>
+    <th>Friends</th>
+    <th>Inbox</th>
+    <th>Outbox</th>
+    </tr>
+   </thead>
+   <tbody> 
+     #{list items: users, as:'user'}
+     <tr>
+     <td>${user.firstName} ${user.lastName}</td>
+     <td>${user.friendships.size()}</td>
+     <td>${user.inbox.size()}</td>
+     <td>${user.outbox.size()}</td>
+     </tr>
+     #{/list}
+      </tbody>
+   </table>
+            
+   <a class="small ui green button" href="/leaderboard">Most Social</a>      
+   <a class="small ui green button" href="/leaderboard/talkative">Most Talkative</a>   
+           
+</section>
